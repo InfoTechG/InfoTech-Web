@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoTech Registration Form</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://infotechg.github.io/favicon.ico" type="image/x-icon" />
+
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .form-wrapper {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      margin: 3rem auto;
+    }
+
+    .field label.label {
+      font-weight: 600;
+    }
+
+    #message {
+      text-align: center;
+    }
+
+    .hero-body .title {
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Header -->
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2">Student Registration Form</h1>
+        <p class="subtitle is-5">Start your journey – Enroll at InfoTech today!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Container -->
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <form id="form">
+
+          <!-- Personal Information -->
+          <h2 class="title is-4 has-text-primary">Personal Information</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Full Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="Full Name" placeholder="Your full name" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">Gender</label>
+              <div class="control">
+                <label class="radio mr-3"><input type="radio" name="Gender" value="Male" required> Male</label>
+                <label class="radio mr-3"><input type="radio" name="Gender" value="Female"> Female</label>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">Date of Birth</label>
+              <div class="control">
+                <input class="input" type="date" name="Date of Birth" required />
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">Profile Photo</label>
+              <div class="file has-name is-fullwidth">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="Profile Photo" id="profilePhotoInput" accept="image/*"
+                    required />
+                  <span class="file-cta">
+                    <span class="file-icon"><i class="fas fa-upload"></i></span>
+                    <span class="file-label">Choose file</span>
+                  </span>
+                  <span class="file-name" id="profilePhotoName">No file selected</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <h2 class="title is-4 has-text-primary mt-6">Contact Information</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <label class="label">Phone Number</label>
+              <div class="control">
+                <input class="input" type="tel" name="Phone Number" placeholder="e.g. 09XXXXXXX" required />
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">Email Address</label>
+              <div class="control">
+                <input class="input" type="email" name="Email Address" placeholder="example@mail.com (optional)" />
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">Region</label>
+              <div class="control">
+                <input class="input" type="text" name="Region" placeholder="Your Region" required />
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">City/Town</label>
+              <div class="control">
+                <input class="input" type="text" name="City/Town" placeholder="Your City/Town" required />
+              </div>
+            </div>
+
+            <div class="column is-full">
+              <label class="label">Sub-City / Woreda</label>
+              <div class="control">
+                <input class="input" type="text" name="Sub-City / Woreda"
+                  placeholder="Your Sub-City / Woreda (optional)" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Course -->
+          <h2 class="title is-4 has-text-primary mt-6">Education & Course Selection</h2>
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <label class="label">Highest Level of Education</label>
+              <div class="select is-fullwidth">
+                <select name="Highest Level of Education" required>
+                  <option value="">Select education level</option>
+                  <option>Primary</option>
+                  <option>Secondary</option>
+                  <option>TVET</option>
+                  <option>Diploma</option>
+                  <option>Degree</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <label class="label">Desired Course</label>
+              <div class="select is-fullwidth">
+                <select name="Desired Course" required>
+                  <option value="">Select a course</option>
+                  <option>Basic Computer Skill</option>
+                  <option>Photography with Photo Editing</option>
+                  <option>Videography with Video Editing</option>
+                  <option>Programming Language (C++)</option>
+                  <option>Spoken English with Basic Computer Training</option>
+                  <option>Web Development and Database Administration</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="column is-full">
+              <label class="label">Select Training Branch</label>
+              <div class="select is-fullwidth">
+                <select name="Training Branch" required>
+                  <option value="">Select training branch</option>
+                  <option>Bale Goba</option>
+                  <option>Bale Robe</option>
+                  <option>East Bale Ginnir</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fee Payment -->
+          <h2 class="title is-4 has-text-primary mt-6">Administration Fee Payment</h2>
+          <p class="has-text-weight-semibold mb-2">
+            <strong>Payment Instructions:</strong>
+            <hr>
+            Please pay <strong>200 ETB</strong> to one of the following bank accounts:
+          </p>
+
+          <div class="box has-background-light">
+            <p><strong>Bank Option 1</strong></p>
+            <p><strong>Bank Name:</strong> CBE</p>
+            <p>
+              <strong>Account Number:</strong>
+              <span style="cursor: text; color: #3273dc; text-decoration: underline;"
+                title="Select and copy this number">
+                1000101859855
+              </span>
+            </p>
+          </div>
+
+          <div class="box has-background-light">
+            <p><strong>Bank Option 2</strong></p>
+            <p><strong>Bank Name:</strong> Awash Bank</p>
+            <p>
+              <strong>Account Number:</strong>
+              <span style="cursor: text; color: #3273dc; text-decoration: underline;"
+                title="Select and copy this number">
+                1000101859855
+              </span>
+            </p>
+          </div>
+
+          <p class="has-text-weight-semibold mt-3">
+            After making the payment, please upload the <strong>payment screenshot or PDF</strong> as proof.
+          </p>
+          <div class="file has-name is-fullwidth">
+            <label class="file-label">
+              <input class="file-input" type="file" name="Administration Fee Payment" id="feeInput"
+                accept="image/*,application/pdf" required />
+              <span class="file-cta">
+                <span class="file-icon"><i class="fas fa-upload"></i></span>
+                <span class="file-label">Choose file</span>
+              </span>
+              <span class="file-name" id="feeFileName">No file selected</span>
+            </label>
+          </div>
+
+          <!-- Agreement -->
+          <div class="field mt-5">
+            <label class="checkbox">
+              <input type="checkbox" name="Terms Agreement" value="Yes" required />
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-primary" type="submit" id="submit-button">Submit Registration</button>
+            </div>
+            <div class="control">
+              <button class="button is-danger" type="button"
+                onclick="form.reset(); profilePhotoName.textContent='No file selected'; feeFileName.textContent='No file selected';">Cancel</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="message"
+          style="display: none; margin-top: 1rem; padding: 10px; border-radius: 4px; font-weight: bold;">
+        </div>
+      </div>
+
+      <script>
+        const form = document.getElementById("form");
+        const submitButton = document.getElementById("submit-button");
+        const messageDiv = document.getElementById("message");
+        const profilePhotoInput = document.getElementById("profilePhotoInput");
+        const profilePhotoName = document.getElementById("profilePhotoName");
+        const feeInput = document.getElementById("feeInput");
+        const feeFileName = document.getElementById("feeFileName");
+
+        profilePhotoInput.addEventListener("change", () => {
+          profilePhotoName.textContent = profilePhotoInput.files[0]?.name || "No file selected";
+        });
+        feeInput.addEventListener("change", () => {
+          feeFileName.textContent = feeInput.files[0]?.name || "No file selected";
+        });
+
+        async function uploadFile(file) {
+          return new Promise((resolve, reject) => {
+            const fr = new FileReader();
+            fr.onload = (e) => {
+              const data = e.target.result.split(",");
+              resolve({
+                fileName: file.name,
+                mimeType: data[0].match(/:(\w.+);/)[1],
+                data: data[1],
+              });
+            };
+            fr.onerror = reject;
+            fr.readAsDataURL(file);
+          });
+        }
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          messageDiv.textContent = "Submitting...";
+          messageDiv.style.display = "block";
+          messageDiv.style.backgroundColor = "beige";
+          messageDiv.style.color = "black";
+          submitButton.disabled = true;
+          submitButton.classList.add("is-loading");
+
+          try {
+            const formData = new FormData(form);
+            const formDataObj = {};
+            for (let [key, value] of formData.entries()) {
+              formDataObj[key] = value;
+            }
+
+            if (profilePhotoInput.files.length > 0) {
+              formDataObj["Profile Photo"] = await uploadFile(profilePhotoInput.files[0]);
+            }
+            if (feeInput.files.length > 0) {
+              formDataObj["Administration Fee Payment Photo ar pdf"] = await uploadFile(feeInput.files[0]);
+            }
+            formDataObj["Timestamp"] = new Date().toLocaleString();
+
+            const response = await fetch("https://script.google.com/macros/s/AKfycbxOaCIjKE3BYsqX7P2dC57AznsUDn9kuHqdIGUVZEWNxiGrrToLsR_L0sFjqlJPD_FF/exec", {
+              method: "POST",
+              body: JSON.stringify(formDataObj),
+              headers: { "Content-Type": "text/plain;charset=utf-8" },
+            });
+
+            const data = await response.json();
+            if (data.status === "success") {
+              messageDiv.textContent = "You have successfully registered!";
+              messageDiv.style.backgroundColor = "#48c78e";
+              messageDiv.style.color = "white";
+              form.reset();
+              profilePhotoName.textContent = "No file selected";
+              feeFileName.textContent = "No file selected";
+            } else {
+              throw new Error(data.message || "Submission failed");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            messageDiv.textContent = "Error: " + error.message;
+            messageDiv.style.backgroundColor = "#f14668";
+            messageDiv.style.color = "white";
+          } finally {
+            submitButton.disabled = false;
+            submitButton.classList.remove("is-loading");
+            setTimeout(() => (messageDiv.style.display = "none"), 4000);
+          }
+        });
+      </script>
+</body>
+
+</html>

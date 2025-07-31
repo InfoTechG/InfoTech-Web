@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Info-Tech Training Institution</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div class="icon p-2 me-2">
+            <a href="">
+                <img class="img-fluid" src="img/logo.jpg" alt="Icon" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+        <!-- Language Dropdown as Card -->
+        <div class="nav-item dropdown ms-0">
+            <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" id="languageDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fw-semibold">🌍 Language</span>
+            </a>
+
+            <div class="dropdown-menu p-3 border-0 rounded-4 shadow language-card animate__animated animate__fadeIn"
+                aria-labelledby="languageDropdown">
+                <h6 class="dropdown-header text-primary fw-bold">Choose Language</h6>
+                <div class="list-group list-group-flush">
+                    <a href="index.html"
+                        class="list-group-item list-group-item-action d-flex align-items-center rounded-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/330/330425.png" alt="English" width="24"
+                            class="me-2">
+                        English
+                    </a>
+                    <a href="aindex.html"
+                        class="list-group-item list-group-item-action d-flex align-items-center rounded-3">
+                        <img src="img/oromic.png" alt="Oromo" width="24" class="me-2">
+                        oromic (Afaan Oromoo)
+                    </a>
+                    <a href="bindex.html"
+                        class="list-group-item list-group-item-action d-flex align-items-center rounded-3">
+                        <img src="img/amharic.jpeg" alt="Amharic" width="24" class="me-2">
+                        Amharic (አማርኛ)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="bindex.html" class="nav-item nav-link active">ቤት</a>
+                <a href="#babout" class="nav-item nav-link reload-link">ስለ</a>
+                <a href="#bcourses" class="nav-item nav-link reload-link">ኮርሶች</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ገፆች</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="#bhubs" class="dropdown-item reload-link">የእኛ መገናኛዎች</a>
+                        <a href="#bteam" class="dropdown-item reload-link">የኛ ቡድን</a>
+                        <a href="#btestimonial" class="dropdown-item reload-link">ምስክርነት</a>
+                    </div>
+                </div>
+                <a href="Portal/ContactUs.html" class="nav-item nav-link">ተገናኝ</a>
+            </div>
+            <a href="Portal/StudentPortal.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+                አሁን ይቀላቀሉ<i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/home-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown">
+                                    ኢንፎቴክ ማሰልጠኛ ተቋም </h1>
+                                <h1 class="m-0 text-primary fw-bold fs-3 fs-md-2">
+                                    ምርጥ የስልጠና ተቋም
+                                </h1>
+                                <a href="readmore.html"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">ተጨማሪ ያንብቡ</a>
+                                <a href="registartion.html"
+                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">ይመዝገቡ</a>
+                            </div>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.instagram.com/infotech_photography"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.facebook.com/Infooteekii"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://youtube.com/@infotechtrainingcenter"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.tiktok.com/@infotech.studio"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://t.me/infotechcomp"><i
+                                        class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/home-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown">
+                                    ኢንፎቴክ ማሰልጠኛ ተቋም </h1>
+                                <h1 class="m-0 text-primary fw-bold fs-3 fs-md-2">
+                                    ኢንፎ-ቴክ ይማሩ </h1>
+                                <a href="readmore.html"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">ተጨማሪ ያንብቡ</a>
+                                <a href="registartion.html"
+                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">ይመዝገቡ</a>
+                            </div>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.instagram.com/infotech_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.facebook.com/Infooteekii"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://youtube.com/@infotechtrainingcenter?si=hAbcU0AiAFUh7y9F"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.tiktok.com/@info_photographer?is_from_webapp=1&sender_device=pc"><i
+                                        class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href="https://www.tiktok.com/@info_photographer?is_from_webapp=1&sender_device=pc"><i
+                                        class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">ችሎታ ያላቸው አስተማሪዎች</h5>
+                            <p>ኢንፎ-ቴክ፣ የእኛ ቁርጠኛ የሰለጠነ አስተማሪዎች ቡድን ምርጡን የመማር ልምድ ያረጋግጣል። በእውቀታቸው እና ቁርጠኝነት ተማሪዎች በመረጡት
+                                የስራ መስክ የላቀ ውጤት እንዲያመጡ እናበረታታለን።</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">የመስመር ላይ ምዝገባዎች</h5>
+                            <p>በመረጃ ቴክ የተሳለጠ የመስመር ላይ ምዝገባ ሂደታችን ለኮርሶች መመዝገብ ምቹ ያደርገዋል። በቀላሉ ለመመዝገብ እና የመማር ጉዞዎን ከችግር ነጻ
+                                ለማድረግ የድረ-ገጻችንን "ኮርሶች" ክፍል ይጎብኙ።</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">የቤት ፕሮጀክቶች</h5>
+                            <p>በመረጃ-ቴክ ላይ ተግባራዊ ትምህርት ቁልፍ ነው። ዕውቀትን በብቃት ተግባራዊ ለማድረግ፣ ፈጠራን እና የገሃዱ ዓለም ክህሎቶችን ለማዳበር የቤት
+                                ፕሮጀክቶችን ከስርዓተ ትምህርታችን ጋር እናዋህዳለን።</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">አጠቃላይ መርጃዎች</h5>
+                            <p>ኢንፎ-ቴክ በበለጸገ የመጽሐፍ ቤተ-መጽሐፍት መማርን ይደግፋል። ሁሉንም የኮምፒዩተር ስልጠና እና ሌሎችንም የሚሸፍኑ በሳይት እና በመስመር ላይ
+                                ሰፋ ያለ ግብአቶችን ይድረሱ።</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="babout">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="video-wrapper p-3 rounded-4 shadow-lg bg-white">
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                            <iframe src="https://www.canva.com/design/DAGuuLDpsmU/L7IZ7qqYouOplevmbzLDzQ/watch?embed"
+                                style="border: none; width: 100%; height: 100%;" allowfullscreen
+                                loading="lazy"></iframe>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="mb-1 text-primary">Welcome to InfoTech Training Institution</h5>
+                            <p class="text-muted small">Watch this short introduction video to learn more about our
+                                mission, programs, and vision for empowering youth with digital skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">ስለ እኛ</h6>
+                    <h1 class="mb-4">እንኳን ወደ ኢንፎ-ቴክ በደህና መጡ</h1>
+                    <p class="mb-4">ኢንፎ-ቴክ አስፈላጊ የአይቲ ክህሎት ያላቸውን ግለሰቦች ለማስታጠቅ የተዘጋጀ መሪ የኮምፒውተር ማሰልጠኛ ማዕከል ነው። ልምድ ካላቸው
+                        አስተማሪዎች ቡድን ጋር በሃርድዌር፣ በሶፍትዌር እና በኔትዎርክ ላይ ያለውን ብቃት ለማሳደግ የተነደፉ ሰፊ ኮርሶችን እናቀርባለን። የእኛ የተሳለጠ
+                        የመስመር ላይ ምዝገባ ሂደት የመማር እድሎችን በቀላሉ ማግኘትን ያረጋግጣል።</p>
+                    <p class="mb-4">የንድፈ ሃሳባዊ እውቀትን ለማጠናከር የቤት ፕሮጀክቶችን ከስርዓተ ትምህርታችን ጋር በማዋሃድ በተግባራዊ ትምህርት እናምናለን። ለተማሪ
+                        ስኬት ቁርጠኛ በመሆን ቀጣይነት ያለው የመማር እና የክህሎት እድገትን ለመደገፍ እንደ መጽሃፍ መፃህፍታችን እና የመስመር ላይ መድረኮችን የመሳሰሉ
+                        አጠቃላይ ግብዓቶችን እናቀርባለን።</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>ችሎታ ያላቸው አስተማሪዎች</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>የመስመር ላይ ምዝገባዎች</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>የምስክር ወረቀት ፕሮግራም</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>ችሎታ ያላቸው አስተማሪዎች</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>የቤት ፕሮጀክቶች</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>አጠቃላይ መርጃዎች</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="registration.html">ይመዝገቡ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5" id="bcourses">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">ኮርሶች</h6>
+                <h1 class="mb-5">ታዋቂ ኮርሶች</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="basicreadmore.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registration.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">አሁን ይመዝገቡ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">መሰረታዊ የኮምፒውተር ችሎታ</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-0">መደበኛ ክፍሎች: 700.00 ETB በወር</h5>
+                            <h5 class="mb-0">የሳምንት መጨረሻ ክፍሎች፡ 600.00 ETB በወር</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="Photreadmore.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registration.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">አሁን ይመዝገቡ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">ፎቶግራፍ ከፎቶ አርትዖት ጋር </h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-0">መደበኛ ክፍሎች: 1300.00 ETB በወር</h5>
+                            <h5 class="mb-0">የሳምንት መጨረሻ ክፍሎች፡ 1000.00 ETB በወር</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="vedreadmore.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registration.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">አሁን ይመዝገቡ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">ቪዲዮግራፊ ከቪዲዮ አርትዖት ጋር</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-0">መደበኛ ክፍሎች: 1600.00 ETB በወር</h5>
+                            <h5 class="mb-0">የሳምንት መጨረሻ ክፍሎች፡ 1200.00 ኢቲቢ በወር</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-4.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="Progreadmore.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registration.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">አሁን ይመዝገቡ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">የፕሮግራም አወጣጥ ቋንቋ (C++)</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-0">የሳምንት መጨረሻ ክፍሎች፡ 800.00 ኢቲቢ በወር</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-5.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="spokreadmore.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registration.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">አሁን ይመዝገቡ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">እንግሊዝኛ ከመሠረታዊ የኮምፒዩተር ስልጠና ጋር</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-0">መደበኛ ክፍሎች፡ 300.00 ኢቲቢ በወር</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-7.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="graphicsreadmore.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registration.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">ይመዝገቡ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">ግራፊክ ዲዛይን</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-1">መደበኛ ክፍሎች፡ 10000.00 ኢቲቢ በወር</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-6.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="bwebdatareadmore.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">ተጨማሪ ያንብቡ</a>
+                                <a href="registartion.html" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">አሁን መመዝገብ</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-4">የድር ልማት እና የውሂብ ጎታ አስተዳደር</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <h5 class="mb-1">መደበኛ ክፍሎች፡ ለዋጋ እና የጊዜ ሰሌዳ ያግኙን።</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+    <!-- Our hubs -->
+    <div class="container-xxl py-5 category" id="bhubs">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">መገናኛዎች</h6>
+                <h1 class="mb-5">የእኛ መገናኛዎች</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/hub-1.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">ሮቤ</h5>
+                                    <small class="text-primary">የሲኮማዶ ህብረት ህንፃ G+3</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/hub-2.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">ሮቤ</h5>
+                                    <small class="text-primary">የሲኮማዶ ህብረት ህንፃ G+3</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/hub-3.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">ጎባ</h5>
+                                    <small class="text-primary">የመኪና ማቆሚያ ፊት ለፊት</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/hub-4.jpg" alt=""
+                            style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                            style="margin:  1px;">
+                            <h5 class="m-0">ሮቤ</h5>
+                            <small class="text-primary">የሲኮማዶ ህብረት ህንፃ G+3</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hubs end -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5" id="bteam">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">አስተማሪዎች</h6>
+                <h1 class="mb-5">ኤክስፐርት አስተማሪዎች</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <p class="btn btn-sm-square btn-primary mx-1" href="+251 95 370 3597"><i
+                                        class="fa fa-phone-alt me-1"></i></p>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Andualem Kebebe</h5>
+                            <small>Dean Of Institution</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <p class="btn btn-sm-square btn-primary mx-1" href="+251 95 370 3597"><i
+                                        class="fa fa-phone-alt me-1"></i></p>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Gezahegn Getahun</h5>
+                            <small>Training Manager</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <p class="btn btn-sm-square btn-primary mx-1" href="+251 95 370 3597"><i
+                                        class="fa fa-phone-alt me-1"></i></p>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Abdurahman Kemal</h5>
+                            <small>Main Instructor</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://t.me/Muhafizahmed"><i
+                                        class="fab fa-telegram"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1"
+                                    href="https://www.instagram.com/muhafizahmede"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="tel:+251953115473"><i
+                                        class="fa fa-phone-alt me-1"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">ሙሀፊዝ አህመድ</h5>
+                            <small>የሶፍትዌር መሐንዲስ</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" id="btestimonial">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">ምስክርነት</h6>
+                <h1 class="mb-5">ተማሪዎቻችን ይላሉ!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/GraduatedStudent.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">ብሩክ ጌታቸው</h5>
+                    <p>ተማሪ</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">በ ቴክ ያሉ አስተማሪዎች አስደናቂ ናቸው! ውስብስብ ርዕሶችን በቀላሉ ለመረዳት እና ተግባራዊ አድርገዋል።</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/GraduatedStudent.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">ማህሌት አበራ</h5>
+                    <p>ተማሪ</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">ትምህርቶቹ ጥልቅ ነበሩ እና አስተማሪዎች በሚያስደንቅ ሁኔታ ዕውቀት ነበራቸው። በእያንዳንዱ እርምጃ እንደተደገፍኩ ተሰማኝ።
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/GraduatedStudent.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">ቤተልሔም ዘውዱ</h5>
+                    <p>ኮምፒውተር ሳይንስ</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">እዚህ የተማርኳቸው ተግባራዊ ችሎታዎች በስራዬ ላይ በቀጥታ ተፈጻሚነት አላቸው፣ እና በአፈፃፀሜ ላይ ጉልህ የሆነ መሻሻል
+                            አይቻለሁ።</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/GraduatedStudent.png"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">ዮሐንስ አለሙ</h5>
+                    <p>የሶፍትዌር ምህንድስና ተማሪ</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">የመሠረታዊ የኮምፒዩተር ማሰልጠኛ ፕሮግራም ሥራን ያለምንም ችግር ለመቀየር በራስ መተማመን እና ችሎታ ሰጠኝ። ማህበረሰቡ እና
+                            ሀብቶች ከፍተኛ ደረጃ ያላቸው ናቸው</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="Portal/StudentPortal.html">Student Portal</a>
+                    <hr>
+                    <a class="btn btn-link" href="Portal/StudentExamPortal.html">Take Exam</a>
+                    <hr>
+                    <a class="btn btn-link" href="Portal/StudentExamResult.html">Show Exam Result</a>
+                    <hr>
+                    <a class="btn btn-link" href="Portal/StudentId.html">Get Your iD Card</a>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bale Goba, Infront of Car Station,
+                        Ethiopia
+                    </p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bale Robe, Near Marfata Waaqqo Guttu -
+                        sikomando union Building G+3, Ethiopia</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>East Bale Ginnir,Photo Kalkidan
+                        Building
+                        G+2, Ethiopia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+251 95 370 3597</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+251 983 674 755</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>infotech879@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.instagram.com/infotech_photography"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/Infooteekii"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://youtube.com/@infotechtrainingcenter"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@infotech.studio"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://t.me/infotechcomp"><i
+                                class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom">Info-Tech</a>, All Right Reserved.
+
+
+                        <a class="border-bottom"></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="#">Home</a>
+                            <a href="#babout">About</a>
+                            <a href="#bcourses">Courses</a>
+                            <a href="#bhubs">Hubs</a>
+                            <a href="Portal/ContactUs.html">Contact Us</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+
+    <script>
+        // Enable smooth scrolling on click for all .reload-link elements
+        document.querySelectorAll('.reload-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Close navbar if open (for mobile)
+                    const navbar = document.querySelector('.navbar-collapse');
+                    if (navbar.classList.contains('show')) {
+                        const bsCollapse = new bootstrap.Collapse(navbar, { toggle: true });
+                    }
+
+                    // Scroll to the section smoothly
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }, 300); // slight delay to allow navbar to close
+                }
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
